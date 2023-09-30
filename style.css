@@ -81,8 +81,10 @@ section img{
     object-fit: cover;
     pointer-events: none;
 }
-
-
+section img#moon
+{
+    mix-blend-mode: screen;
+}
 section img#mountains_front{
     z-index: 5;
 }
@@ -133,7 +135,7 @@ section img#mountains_front{
 .sec {
     position: relative;
     padding: 100px;
-    background: linear-gradient(to top,#1d1c1c, #332c2c);
+    background: linear-gradient(to top,#020202, #332c2c);
     z-index: 1;
 }
 .sec h2 {
