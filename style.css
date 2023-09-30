@@ -68,7 +68,7 @@ section::before {
     bottom: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(to top,#1c0522,transparent );
+    background: linear-gradient(to top,#332c2c,transparent );
     z-index: 1000;
 
 }
@@ -86,7 +86,7 @@ section img#moon
     mix-blend-mode: screen;
 }
 section img#mountains_front{
-    z-index: 10;
+    z-index: 5;
 }
 
 #text {
@@ -98,6 +98,21 @@ section img#mountains_front{
     z-index: 9;
 
 }
+#text2 {
+    color: #e2dfdf;
+    position: relative;
+    left: 90px;
+    top: -21px;
+}
+#greet1 {
+    font-size: 22px;
+}
+
+#ms2 {
+    color: #e2dfdf;
+    font-size: 28px;
+}
+
 #btn {
     text-decoration: none;
     display: inline-block;
@@ -109,21 +124,32 @@ section img#mountains_front{
     z-index: 9;
     transform: translateY(100px);
 }
+#pfp {
+    height: 100px;
+    width: 100px;
+    border-radius: 150px;
+    position: relative;
+    right: 20px;
+
+}
 .sec {
     position: relative;
     padding: 100px;
-    background: #1c0522;
+    background: linear-gradient(to top,#020202, #332c2c);
+    z-index: 1;
 }
 .sec h2 {
     font-size: 2.5em;
     margin-bottom: 10px;
     color: #fff;
+    z-index: 111;
 
 }
 .sec p {
     font-size: 1.2em;
     color: #fff;
 }
+
 .sec img {
     position: relative;
     margin-top: 20px;
