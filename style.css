@@ -91,26 +91,60 @@ section img#mountains_front{
 
 #text {
     position: absolute;
-    right: -350px;
+    right: -590px;
     color: #fff;
     white-space: nowrap;
     font-size: 6.5vw;
     z-index: 9;
 
 }
-#text2 {
-    color: #e2dfdf;
-    position: relative;
-    left: 90px;
-    top: -21px;
+#msc {
+    z-index: 2222222;
+
 }
+.text-shadow {
+	text-transform: uppercase;
+	color: transparent;
+	-webkit-text-stroke: #fff;
+	-webkit-text-stroke-width: 1px;
+	text-shadow: 2px 2px 10px blue;
+	transition: all 0.5s ease-in-out;
+	text-align: center;
+	letter-spacing: 0.2em;
+	animation: flicker 0.5s ease-in-out infinite alternate;
+
+	&:hover {
+		color: #fff;
+	}
+}
+
+
+@keyframes flicker {
+	0% {
+		opacity: 0.5;
+		text-shadow: 2px 2px 10px blue;
+	}
+	100% {
+		opacity: 1;
+		text-shadow: 2px 2px 20px blue;
+	}
+}
+
 #greet1 {
     font-size: 22px;
 }
 
 #ms2 {
-    color: #e2dfdf;
+
     font-size: 28px;
+    color: #ffffff;
+    font-weight: bold;
+	text-transform: uppercase;
+	color: white;
+	-webkit-text-stroke: #e2d9d9;
+	-webkit-text-stroke-width: 1px;
+	text-shadow: 2px 2px 10px rgb(141, 17, 17);
+    letter-spacing: 0.1em;
 }
 
 #btn {
@@ -132,23 +166,48 @@ section img#mountains_front{
     right: 20px;
 
 }
+
+h2.splitting {
+    color: saturate(lighten(#182952,55%),60%);
+    .char {
+      transition: transform .3s cubic-bezier(.3, 0, .3, 1), opacity .3s linear;
+      transition-delay: calc( 20ms * var(--char-index) );
+  
+    }
+  
+    &[data-scroll="out"] .char {
+      opacity: 0.1;
+      transform: translateY( .25em );
+    }
+  }
+
+
 .sec {
     position: relative;
     padding: 100px;
-    background: linear-gradient(to top,#020202, #332c2c);
+    background: linear-gradient(to top,#b9b3b3, #332c2c);
     z-index: 1;
 }
 .sec h2 {
     font-size: 2.5em;
     margin-bottom: 10px;
-    color: #fff;
+    color: #ffffff;
     z-index: 111;
+    
 
 }
 .sec p {
     font-size: 1.2em;
-    color: #fff;
+    color: #ffffff;
+    font-weight: bold;
+	text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    color: white;
+    font-weight: bold;
+
 }
+
 
 .sec img {
     position: relative;
@@ -173,3 +232,18 @@ section img#mountains_front{
     cursor: pointer;
     letter-spacing: 1px;
 }
+#startend {
+    font-size: 2.3em;
+    color: #7f2828;
+    font-weight: bold;
+	text-transform: uppercase;
+	color: white;
+	-webkit-text-stroke: #e2d9d9;
+	-webkit-text-stroke-width: 1px;
+	text-shadow: 2px 2px 10px blue;
+    letter-spacing: 0.1em;
+}
+
+
+
+  
